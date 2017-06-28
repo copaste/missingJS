@@ -58,10 +58,6 @@
   HTMLCollection.prototype.off = offEvent;
   NodeList.prototype.off = offEvent;
 
-  //test
-  document.querySelectorAll('div').off('click');
-  document.getElementsByTagName('div').off('click');
-
 
   /**
    ** Simple implementation of $.find
@@ -150,12 +146,6 @@
   NodeList.prototype.find = find;
   HTMLElement.prototype.find = find;
   document.find = find;
-
-  //test
-  document.querySelectorAll('html').find('body');
-  document.getElementsByTagName('html').find('body');
-  document.find('body').find('header');
-
 
   /**
    ** Simple implementation of $.addClass
