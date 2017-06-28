@@ -66,6 +66,7 @@
    **
   **/
   function find(selector) {
+    var fe;
 
     function FindElements(c) {
       var propConf = {enumerable: false, configurable: false, writable: true};
