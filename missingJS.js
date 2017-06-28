@@ -16,11 +16,6 @@
   HTMLCollection.prototype.each = eachLooop;
   NodeList.prototype.each = eachLoop;
 
-  // test
-  document.querySelectorAll('div').each(function(el) {
-    console.log(el);
-  });
-
   /**
    ** Simple implementation of $.on
    ** @param {string} eventName
@@ -41,11 +36,6 @@
 
   HTMLCollection.prototype.on = onEvent;
   NodeList.prototype.on = onEvent;
-
-  // test
-  document.querySelectorAll('div').on('click', function(ev) {
-    console.log('DIV is clicked: ', ev.target);
-  });
 
   /**
    ** Simple implementation of $.off
@@ -294,7 +284,7 @@
    **
   **/
   function closest (selector) {
-    const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
+    var matchesSelector = this.matches || this.webkitMatchesSelector || this.mozMatchesSelector || this.msMatchesSelector;
 
     while (el) {
       if (matchesSelector.call(el, selector)) {
