@@ -13,7 +13,7 @@
     return this;
   }
 
-  HTMLCollection.prototype.each = eachLooop;
+  HTMLCollection.prototype.each = eachLoop;
   NodeList.prototype.each = eachLoop;
 
   /**
