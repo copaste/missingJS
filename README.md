@@ -26,12 +26,12 @@ document.getElementById('ID').on('click', function(ev) {
 });
 
 // or collection of elements
-document.querySelectorAll('.item').on(function(ev) {
+document.querySelectorAll('.item').on('click', function(ev) {
   console.log(ev); 
 });
 
 // remove event listener (cb function is optional)
-document.querySelectorAll('.item').off(cb);
+document.querySelectorAll('.item').off('click', cb);
 ```
 
  - Make a chaining search
