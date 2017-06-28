@@ -39,9 +39,9 @@ document.querySelectorAll('.item').off('click', cb);
 ``` javascript
 // search for body tag on document
 document.find('body');
-// select element with getElementsByClassName and search for elements with class .sub-item within
+// select element with getElementsByClassName and search for elements with class .sub-item on it
 document.getElementsByClassName('item').find('.sub-item');
-// select element with querySelectorAll and search for elements with class .sub-item within
+// select element with querySelectorAll and search for elements with class .sub-item on it
 document.querySelectorAll('.item').find('.sub-item');
 // select element with querySelectorAll and search for elements with class .item within and then for .sub-item
 document.querySelector('#header').find('.item').find('.sub-item'));
