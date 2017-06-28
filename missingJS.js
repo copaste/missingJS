@@ -46,11 +46,11 @@
   function offEvent(eventName, cb) {
     if(this instanceof HTMLCollection || this instanceof NodeList) {
       for(var i = 0; i < this.length; i++) {
-        this[i].removeEventListener(eventName, cb);
+        this[i].removeEventListener(eventName, cb || null);
       }
     }
     else if(this instanceof HTMLElement) {
-      this.removeEventListener(eventName, cb);
+      this.removeEventListener(eventName, cb || null);
     }
     return this;
   }
