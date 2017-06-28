@@ -36,6 +36,7 @@
 
   HTMLCollection.prototype.on = onEvent;
   NodeList.prototype.on = onEvent;
+  HTMLElement.prototype.on = onEvent;
 
   /**
    ** Simple implementation of $.off
@@ -57,7 +58,7 @@
 
   HTMLCollection.prototype.off = offEvent;
   NodeList.prototype.off = offEvent;
-
+  HTMLElement.prototype.off = offEvent;
 
   /**
    ** Simple implementation of $.find
